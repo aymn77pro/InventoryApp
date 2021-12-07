@@ -95,10 +95,6 @@ class InventoryViewModel(private val itemDao: ItmeDao) : ViewModel() {
         return true
     }
 
-    /**
-     * Returns an instance of the [Item] entity class with the item info entered by the user.
-     * This will be used to add a new entry to the Inventory database.
-     */
     private fun getNewItemEntry(itemName: String, itemPrice: String, itemCount: String): Item {
         return Item(
             itemName = itemName,
